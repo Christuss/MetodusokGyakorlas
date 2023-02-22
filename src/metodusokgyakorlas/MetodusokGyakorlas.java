@@ -8,9 +8,16 @@ public class MetodusokGyakorlas {
         String szoveg;
         int a = 5;
         int b = 10;
+        int c = 3;
+        int d = 8;
         szoveg = "Az első 10 szám összege: %d.".formatted(elso10szamOsszege());
         kiir(szoveg);
         szoveg = "%d + %d = %d.".formatted(a, b, oszead(a, b));
+        kiir(szoveg);
+        szoveg = "%d + %d + %d + %d = %d.".formatted(a, b, c ,d, oszead(d, oszead(c, oszead(a, b))));
+        kiir(szoveg);
+        int osszeg = oszead(c, oszead(a, b));
+        szoveg = "%d + %d + %d gyöke: %f.".formatted(a, b, c , Math.sqrt(osszeg));
         kiir(szoveg);
     }
     public static int elso10szamOsszege() {
