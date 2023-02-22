@@ -5,10 +5,13 @@ package metodusokgyakorlas;
 public class MetodusokGyakorlas {
 
     public static void main(String[] args) {
-        int elso10osszeg = elso10szamOsszege();
-        int osszeadasOsszeg = oszead(elso10osszeg, elso10osszeg);
-        kiir(elso10osszeg);
-        kiir(osszeadasOsszeg);
+        String szoveg;
+        int a = 5;
+        int b = 10;
+        szoveg = "Az első 10 szám összege: %d.".formatted(elso10szamOsszege());
+        kiir(szoveg);
+        szoveg = "%d + %d = %d.".formatted(a, b, oszead(a, b));
+        kiir(szoveg);
     }
     public static int elso10szamOsszege() {
         int osszeg = 0;
@@ -21,7 +24,7 @@ public class MetodusokGyakorlas {
         int osszeg = a + b;
         return osszeg;
     }
-    public static void kiir(int osszeg) {
-        System.out.printf("%d\n",osszeg);
+    public static void kiir(String szoveg) {
+        System.out.println(szoveg);
     }
 }
