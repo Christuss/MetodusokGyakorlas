@@ -5,6 +5,10 @@ package metodusokgyakorlas;
 public class MetodusokGyakorlas {
 
     public static void main(String[] args) {
+        muveletek();
+    }
+
+    private static void muveletek() {
         String szoveg;
         int a = 5;
         int b = 10;
