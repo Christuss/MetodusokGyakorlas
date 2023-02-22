@@ -12,6 +12,10 @@ import java.util.Random;
  */
 public class Equalizer {
     public static void main(String[] args) {
+        ciklus();
+    }
+
+    private static void ciklus() {
         for (int i = 0; i < 5; i++) {
             eq();
         }
