@@ -6,11 +6,11 @@ package metodusokgyakorlas;
 
 import java.util.Random;
 
-/**
- *
- * @author User
- */
+    
+
 public class Equalizer {
+    static Random rnd = new Random();
+    
     public static void main(String[] args) {
         feladatok();
     }
@@ -28,7 +28,6 @@ public class Equalizer {
         System.out.println();
     }
     public static void eq() {
-        Random rnd = new Random();
         int hossz = rnd.nextInt(7-3+1)+3;
         kiirasCiklus(hossz);
         System.out.println();
@@ -40,7 +39,6 @@ public class Equalizer {
         System.out.println();
     }
     public static void eq(boolean meret) {
-        Random rnd = new Random();
         int hossz = rnd.nextInt(7-3+1)+3;
         kiirasCiklus(hossz);
         meretKiiras(meret, hossz);
