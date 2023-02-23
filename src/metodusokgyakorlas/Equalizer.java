@@ -53,7 +53,7 @@ public class Equalizer {
     }
     private static void meretKiiras(boolean meret, int hossz) {
         if (meret) {
-            System.out.printf("\u001B[47m(%d)".formatted(hossz));
+            System.out.printf("\u001B[0m(%d)".formatted(hossz));
         }
     }
 }
