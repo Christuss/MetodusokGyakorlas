@@ -13,7 +13,6 @@ import java.util.Random;
 public class Equalizer {
     public static void main(String[] args) {
         feladatok();
-        
     }
 
     private static void feladatok() {
@@ -54,7 +53,7 @@ public class Equalizer {
     }
     private static void meretKiiras(boolean meret, int hossz) {
         if (meret) {
-            System.out.printf("(%d)".formatted(hossz));
+            System.out.printf("\u001B[47m(%d)".formatted(hossz));
         }
     }
 }
