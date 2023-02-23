@@ -19,24 +19,42 @@ public class Equalizer {
     private static void feladatok() {
         eq();
         eq(5);
-        eq();
-        eq(11);
+        eq(true);
+        eq(11, true);
         eq(8);
     }
     public static void eq(int szam) {
         int hossz = szam;
         kiirasCiklus(hossz);
+        System.out.println();
     }
     public static void eq() {
         Random rnd = new Random();
         int hossz = rnd.nextInt(7-3+1)+3;
         kiirasCiklus(hossz);
-        
+        System.out.println();
+    }
+    public static void eq(int szam, boolean meret) {
+        int hossz = szam;
+        kiirasCiklus(hossz);
+        meretKiiras(meret, hossz);
+        System.out.println();
+    }
+    public static void eq(boolean meret) {
+        Random rnd = new Random();
+        int hossz = rnd.nextInt(7-3+1)+3;
+        kiirasCiklus(hossz);
+        meretKiiras(meret, hossz);
+        System.out.println();
     }
     static void kiirasCiklus(int hossz) {
         for (int i = 0; i < hossz; i++) {
             System.out.print("\u001B[45m" + " ");
         }
-        System.out.println();
+    }
+    private static void meretKiiras(boolean meret, int hossz) {
+        if (meret) {
+            System.out.printf("(%d)".formatted(hossz));
+        }
     }
 }
